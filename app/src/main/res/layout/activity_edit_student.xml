@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textViewNameE"
+        android:layout_width="83dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <EditText
+        android:id="@+id/textEditNameE"
+        android:layout_width="209dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewNameE"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/textViewSurnameE"
+        android:layout_width="83dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Surname"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <EditText
+        android:id="@+id/editTextSurnameE"
+        android:layout_width="209dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewSurnameE"
+        app:layout_constraintTop_toBottomOf="@+id/textEditNameE"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/textViewDniE"
+        android:layout_width="83dp"
+        android:layout_height="18dp"
+        android:text="DNI"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <TextView
+        android:id="@+id/editTextDniE"
+        android:layout_width="208dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="332dp" />
+
+    <TextView
+        android:id="@+id/textViewTelfE"
+        android:layout_width="83dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="96dp"
+        android:text="Phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.321" />
+
+    <EditText
+        android:id="@+id/editTextTelfE"
+        android:layout_width="209dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/textViewTelfE"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <TextView
+        android:id="@+id/textViewGrauE"
+        android:layout_width="83dp"
+        android:layout_height="18dp"
+        android:text="Grade"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <Spinner
+        android:id="@+id/spinnerGrauE"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.554" />
+
+    <TextView
+        android:id="@+id/textViewCursE"
+        android:layout_width="83dp"
+        android:layout_height="18dp"
+        android:text="Course"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCursE"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        tools:layout_editor_absoluteX="210dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <Button
+        android:id="@+id/createStudentBtnE"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="260dp"
+        android:layout_height="49dp"
+        android:text="UPDATE"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="612dp" />
+
+    <Button
+        android:id="@+id/cancelStudentBtnE"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="260dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="8dp"
+        android:text="CANCEL"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.809" />
+
+</android.support.constraint.ConstraintLayout>
