@@ -82,7 +82,7 @@
         android:layout_height="33dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="96dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewDniE"
         tools:layout_editor_absoluteY="332dp" />
 
     <TextView
