@@ -9,7 +9,7 @@
     android:weightSum="1">
 
     <TextView
-        android:id="@+id/textViewNameE"
+        android:id="@+id/textViewName"
         android:layout_width="83dp"
         android:layout_height="18dp"
         android:layout_marginLeft="8dp"
@@ -25,22 +25,22 @@
         app:layout_constraintVertical_bias="0.084" />
 
     <EditText
-        android:id="@+id/textEditNameE"
+        android:id="@+id/textEditName"
         android:layout_width="209dp"
         android:layout_height="38dp"
-        android:layout_marginStart="128dp"
+        android:layout_marginStart="124dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="104dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textViewNameE"
+        app:layout_constraintStart_toStartOf="@+id/textViewName"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.033" />
 
     <TextView
-        android:id="@+id/textViewSurnameE"
+        android:id="@+id/textViewSurname"
         android:layout_width="83dp"
         android:layout_height="18dp"
         android:layout_marginLeft="8dp"
@@ -56,40 +56,33 @@
         app:layout_constraintVertical_bias="0.228" />
 
     <EditText
-        android:id="@+id/editTextSurnameE"
+        android:id="@+id/editTextSurname"
         android:layout_width="209dp"
         android:layout_height="38dp"
-        android:layout_marginStart="128dp"
+        android:layout_marginStart="124dp"
         android:layout_marginTop="18dp"
         android:layout_marginRight="104dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textViewSurnameE"
-        app:layout_constraintTop_toBottomOf="@+id/textEditNameE"
-        app:layout_constraintVertical_bias="0.013" />
+        app:layout_constraintStart_toStartOf="@+id/textViewSurname"
+        app:layout_constraintTop_toBottomOf="@+id/textEditName"
+        app:layout_constraintVertical_bias="0.017" />
 
     <TextView
-        android:id="@+id/textViewDniE"
+        android:id="@+id/textViewDni"
         android:layout_width="83dp"
         android:layout_height="18dp"
+        android:layout_marginTop="196dp"
         android:text="DNI"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="196dp" />
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/editTextDniE"
-        android:layout_width="208dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="128dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintStart_toStartOf="@+id/textViewDniE"
-        tools:layout_editor_absoluteY="196dp" />
-
-    <TextView
-        android:id="@+id/textViewTelfE"
+        android:id="@+id/textViewPhone"
         android:layout_width="83dp"
         android:layout_height="17dp"
         android:layout_marginLeft="8dp"
@@ -105,25 +98,39 @@
         app:layout_constraintVertical_bias="0.468" />
 
     <EditText
-        android:id="@+id/editTextTelfE"
+        android:id="@+id/editTextPhone"
         android:layout_width="209dp"
         android:layout_height="38dp"
-        android:layout_marginStart="128dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="144dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintStart_toStartOf="@+id/textViewTelfE"
-        tools:layout_editor_absoluteY="133dp" />
+        app:layout_constraintStart_toStartOf="@+id/textViewPhone"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDni"
+        android:layout_width="209dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="196dp"
+        android:ems="10"
+        app:layout_constraintStart_toStartOf="@+id/textViewDni"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textViewGrauE"
+        android:id="@+id/textViewGrade"
         android:layout_width="83dp"
         android:layout_height="18dp"
+        android:layout_marginTop="316dp"
         android:text="Grade"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="248dp" />
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinnerGrauE"
+        android:id="@+id/spinnerGrade"
         android:layout_width="110dp"
         android:layout_height="38dp"
         android:layout_marginLeft="8dp"
@@ -138,35 +145,30 @@
         app:layout_constraintVertical_bias="0.67" />
 
     <TextView
-        android:id="@+id/textViewCursE"
+        android:id="@+id/textViewCourse"
         android:layout_width="83dp"
         android:layout_height="18dp"
+        android:layout_marginTop="256dp"
         android:text="Course"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="466dp" />
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinnerCursE"
+        android:id="@+id/spinnerCourse"
         android:layout_width="110dp"
         android:layout_height="38dp"
-        tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="466dp" />
+        android:layout_marginTop="316dp"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <Button
-        android:id="@+id/createStudentBtnE"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="260dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="108dp"
-        android:text="UPDATE"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerCursE"
-        tools:layout_editor_absoluteX="98dp" />
-
-    <Button
-        android:id="@+id/cancelStudentBtnE"
+        android:id="@+id/cancelStudentBtn"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="260dp"
         android:layout_height="49dp"
@@ -182,5 +184,24 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/updateStudentBtn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="260dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="8dp"
+        android:text="UPDATE"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8" />
 
 </android.support.constraint.ConstraintLayout>
