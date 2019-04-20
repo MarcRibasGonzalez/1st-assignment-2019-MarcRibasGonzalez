@@ -125,13 +125,13 @@ public class DbAdapter {
     }
 
 
-    public long createTodo(cat.tecnocampus.appsmobils.recyclerviewproject.Todo current) {
+    /*public long createTodo(cat.tecnocampus.appsmobils.recyclerviewproject.Todo current) {
         ContentValues initialValues = new ContentValues();
         initialValues.put(Todo.KEY_ROWID, current.getId());
         initialValues.put(Todo.KEY_TITLE, current.getTask());
 
         return mDb.insert(Todo.TABLE_NAME, null, initialValues);
-    }
+    }*/
 
     /**
      * Delete the note with the given rowId
